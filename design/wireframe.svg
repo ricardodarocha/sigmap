@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 840" width="100%" style="background-color: #ffffff; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;">
+  
+  <defs>
+    <!-- Estilos de Linha e Cores Wireframe Blue -->
+    <style>
+      .bg-white { fill: #ffffff; }
+      .stroke-main { stroke: #1565C0; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-thin { stroke: #1E88E5; stroke-width: 1.2; fill: none; }
+      .stroke-guide { stroke: #90CAF9; stroke-width: 1; stroke-dasharray: 4,4; fill: none; }
+      .fill-light { fill: #E3F2FD; }
+      .fill-medium { fill: #BBDEFB; }
+      .fill-primary { fill: #1976D2; }
+      .text-title { fill: #0D47A1; font-size: 13px; font-weight: 600; }
+      .text-label { fill: #1565C0; font-size: 11px; font-weight: 500; }
+      .text-code { fill: #1E88E5; font-size: 11px; font-family: monospace; }
+      .text-guide { fill: #64B5F6; font-size: 9px; font-family: monospace; }
+      .text-btn { fill: #ffffff; font-size: 11px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- ==================== LINHAS GUIA GLOBAIS DE ALINHAMENTO ==================== -->
+  <line x1="40" y1="20" x2="40" y2="810" class="stroke-guide" />
+  <line x1="520" y1="20" x2="520" y2="810" class="stroke-guide" />
+  <line x1="560" y1="20" x2="560" y2="810" class="stroke-guide" />
+  <line x1="1100" y1="20" x2="1100" y2="810" class="stroke-guide" />
+  
+  <line x1="20" y1="50" x2="1120" y2="50" class="stroke-guide" />
+  <line x1="20" y1="440" x2="1120" y2="440" class="stroke-guide" />
+
+  <!-- ==================== JANELA 1: LISTA DE TAREFAS (F4) ==================== -->
+  <g id="janela-lista-tarefas">
+    <!-- Moldura da Janela -->
+    <rect x="40" y="50" width="480" height="370" rx="6" class="bg-white stroke-main" />
+    
+    <!-- Barra de Título -->
+    <path d="M 40,50 L 520,50 L 520,80 L 40,80 Z" class="fill-light stroke-main" />
+    <rect x="50" y="60" width="12" height="12" rx="2" class="stroke-main" />
+    <text x="70" y="70" class="text-title">F4 - Lista de Tarefas</text>
+    <!-- Controle de Janela -->
+    <line x1="460" y1="65" x2="472" y2="65" class="stroke-main" />
+    <rect x="480" y="60" width="10" height="10" class="stroke-main" fill="none" />
+    <line x1="500" y1="60" x2="510" y2="70" class="stroke-main" />
+    <line x1="510" y1="60" x2="500" y2="70" class="stroke-main" />
+
+    <!-- Botões Superiores -->
+    <rect x="60" y="95" width="65" height="28" rx="4" class="fill-primary stroke-main" />
+    <text x="75" y="113" class="text-btn">add +</text>
+
+    <rect x="135" y="95" width="65" height="28" rx="4" class="fill-primary stroke-main" />
+    <text x="153" y="113" class="text-btn">stop</text>
+
+    <rect x="210" y="95" width="75" height="28" rx="4" class="fill-primary stroke-main" />
+    <text x="222" y="113" class="text-btn">remove</text>
+
+    <!-- Cabeçalho do ListView -->
+    <text x="70" y="145" class="text-label">Cor</text>
+    <text x="120" y="145" class="text-label">PID</text>
+    <text x="190" y="145" class="text-label">Nome</text>
+    <text x="380" y="145" class="text-label">Estado</text>
+
+    <!-- Estrutura do ListView -->
+    <rect x="60" y="155" width="440" height="240" rx="4" class="stroke-thin" />
+
+    <!-- Itens do ListView -->
+    <!-- Item 1 -->
+    <rect x="70" y="167" width="40" height="14" rx="2" class="stroke-main fill-medium" />
+    <text x="120" y="178" class="text-code">1204</text>
+    <text x="190" y="178" class="text-code">systemd</text>
+    <text x="380" y="178" class="text-code">Pronto</text>
+
+    <!-- Item 2 -->
+    <rect x="70" y="197" width="40" height="14" rx="2" class="stroke-main fill-medium" />
+    <text x="120" y="208" class="text-code">1310</text>
+    <text x="190" y="208" class="text-code">sshd</text>
+    <text x="380" y="208" class="text-code">Pronto</text>
+
+    <!-- Item 3 -->
+    <rect x="70" y="227" width="40" height="14" rx="2" class="stroke-main fill-medium" />
+    <text x="120" y="238" class="text-code">1877</text>
+    <text x="190" y="238" class="text-code">nginx</text>
+    <text x="380" y="238" class="text-code">Pronto</text>
+
+    <!-- Item 4 -->
+    <rect x="70" y="257" width="40" height="14" rx="2" class="stroke-main fill-medium" />
+    <text x="120" y="268" class="text-code">2045</text>
+    <text x="190" y="268" class="text-code">postgres</text>
+    <text x="380" y="268" class="text-code">Pronto</text>
+
+    <!-- Item 5 -->
+    <rect x="70" y="287" width="40" height="14" rx="2" class="stroke-main fill-medium" />
+    <text x="120" y="298" class="text-code">2231</text>
+    <text x="190" y="298" class="text-code">cron</text>
+    <text x="380" y="298" class="text-code">Pronto</text>
+
+    <!-- Item 6: SELECIONADO (Highlight) -->
+    <rect x="62" y="315" width="436" height="30" rx="3" class="fill-light stroke-main" />
+    <rect x="70" y="323" width="40" height="14" rx="2" class="fill-primary stroke-main" />
+    <text x="120" y="334" class="text-code" font-weight="bold">2390</text>
+    <text x="190" y="334" class="text-code" font-weight="bold">rustc</text>
+    <text x="380" y="334" class="text-code" font-weight="bold">Executando</text>
+
+    <!-- Linha Guia de Chamada / Anotação -->
+    <line x1="420" y1="330" x2="490" y2="330" class="stroke-guide" />
+    <circle cx="420" cy="330" r="3" class="fill-primary" />
+    <text x="400" y="360" class="text-guide">&lt;-- Item Selecionado</text>
+  </g>
+
+
+  <!-- ==================== JANELA 2: DETALHES DO PID (F5) ==================== -->
+  <g id="janela-detalhes-pid">
+    <!-- Moldura da Janela -->
+    <rect x="560" y="50" width="540" height="730" rx="6" class="bg-white stroke-main" />
+    
+    <!-- Barra de Título -->
+    <path d="M 560,50 L 1100,50 L 1100,80 L 560,80 Z" class="fill-light stroke-main" />
+    <rect x="575" y="60" width="12" height="12" rx="2" class="stroke-main" />
+    <text x="595" y="70" class="text-title">F5 - Detalhes do PID</text>
+    <!-- Controle de Janela -->
+    <line x1="1040" y1="65" x2="1052" y2="65" class="stroke-main" />
+    <rect x="1060" y="60" width="10" height="10" class="stroke-main" fill="none" />
+    <line x1="1080" y1="60" x2="1090" y2="70" class="stroke-main" />
+    <line x1="1090" y1="60" x2="1080" y2="70" class="stroke-main" />
+
+    <!-- Área de Preview / Shape Visual -->
+    <rect x="585" y="100" width="490" height="220" rx="4" class="fill-light stroke-thin" />
+    <!-- Shape Card Interno -->
+    <rect x="750" y="150" width="160" height="120" rx="12" class="bg-white stroke-main" />
+    <circle cx="830" cy="210" r="22" class="fill-primary stroke-main" />
+    <!-- Guia de Alinhamento Central do Shape -->
+    <line x1="830" y1="100" x2="830" y2="320" class="stroke-guide" />
+    <text x="840" y="120" class="text-guide">Eixo Central</text>
+
+    <!-- Inputs em Grid (2x2) -->
+    <!-- Coluna 1: PID -->
+    <text x="585" y="350" class="text-label">PID</text>
+    <rect x="585" y="360" width="230" height="38" rx="4" class="stroke-main bg-white" />
+    <text x="600" y="384" class="text-code">1310</text>
+
+    <!-- Coluna 2: Estado -->
+    <text x="845" y="350" class="text-label">Estado</text>
+    <rect x="845" y="360" width="230" height="38" rx="4" class="stroke-main bg-white" />
+    <text x="860" y="384" class="text-code">Executando</text>
+
+    <!-- Linha Guia Horizontal para Inputs -->
+    <line x1="560" y1="379" x2="1100" y2="379" class="stroke-guide" />
+
+    <!-- Coluna 1: Nome -->
+    <text x="585" y="425" class="text-label">Nome</text>
+    <rect x="585" y="435" width="230" height="38" rx="4" class="stroke-main bg-white" />
+    <text x="600" y="459" class="text-code">sshd</text>
+
+    <!-- Coluna 2: Cor -->
+    <text x="845" y="425" class="text-label">Cor</text>
+    <rect x="845" y="435" width="230" height="38" rx="4" class="stroke-main bg-white" />
+    <text x="860" y="459" class="text-code">03 · blue</text>
+
+    <!-- Componente: Progress Bar -->
+    <text x="585" y="515" class="text-label">Progresso: 840 / 3000 ms</text>
+    <!-- Trilho da Progress Bar -->
+    <rect x="585" y="525" width="490" height="32" rx="4" class="stroke-main fill-light" />
+    <!-- Preenchimento de Progresso -->
+    <rect x="585" y="525" width="140" height="32" rx="4" class="fill-primary stroke-main" />
+
+    <!-- Linha Guia indicando limite de progresso -->
+    <line x1="725" y1="505" x2="725" y2="570" class="stroke-guide" />
+    <text x="730" y="515" class="text-guide">28% (840ms)</text>
+
+    <!-- Componente: Slider (Controle Deslizante) -->
+    <text x="585" y="595" class="text-label">t (ms)</text>
+    <!-- Trilho do Slider -->
+    <line x1="640" y1="600" x2="1075" y2="600" class="stroke-main" stroke-width="3" />
+    <!-- Knob / Botão do Slider -->
+    <circle cx="780" cy="600" r="10" class="fill-primary stroke-main" />
+    
+    <!-- Guia de Alinhamento Vertical para Slider -->
+    <line x1="780" y1="580" x2="780" y2="620" class="stroke-guide" />
+  </g>
+
+
+  <!-- ==================== JANELA 3: MODAL NOVO PROCESSO ==================== -->
+  <g id="janela-novo-processo">
+    <!-- Moldura do Modal -->
+    <rect x="40" y="460" width="480" height="320" rx="6" class="bg-white stroke-main" />
+    
+    <!-- Barra de Título -->
+    <path d="M 40,460 L 520,460 L 520,490 L 40,490 Z" class="fill-light stroke-main" />
+    <rect x="55" y="470" width="12" height="12" rx="2" class="stroke-main" />
+    <text x="75" y="480" class="text-title">Novo Processo</text>
+    <!-- Controle de Janela -->
+    <line x1="460" y1="475" x2="472" y2="475" class="stroke-main" />
+    <rect x="480" y="470" width="10" height="10" class="stroke-main" fill="none" />
+    <line x1="500" y1="470" x2="510" y2="480" class="stroke-main" />
+    <line x1="510" y1="470" x2="500" y2="480" class="stroke-main" />
+
+    <!-- Conteúdo do Modal -->
+    <text x="60" y="520" class="text-title" font-size="16px">Novo processo</text>
+
+    <!-- Input Texto: Nome do processo -->
+    <text x="60" y="545" class="text-label">Nome do processo</text>
+    <rect x="60" y="555" width="440" height="32" rx="4" class="stroke-main bg-white" />
+    <text x="72" y="575" class="text-guide" font-size="12px">ex.: nginx</text>
+
+    <!-- Paleta de Cores (Shapes Selector) -->
+    <text x="60" y="605" class="text-label">Cor: 00 · green</text>
+    <g id="swatches">
+      <!-- Swatch 1 (Selecionado) -->
+      <rect x="60" y="613" width="50" height="26" rx="4" class="fill-primary stroke-main" />
+      <rect x="57" y="610" width="56" height="32" rx="6" class="stroke-main" stroke-dasharray="2,2" />
+      
+      <!-- Swatch 2 -->
+      <rect x="120" y="613" width="50" height="26" rx="4" class="fill-medium stroke-main" />
+      <!-- Swatch 3 -->
+      <rect x="180" y="613" width="50" height="26" rx="4" class="fill-light stroke-main" />
+      <!-- Swatch 4 -->
+      <rect x="240" y="613" width="50" height="26" rx="4" class="fill-medium stroke-main" />
+      <!-- Swatch 5 -->
+      <rect x="300" y="613" width="50" height="26" rx="4" class="fill-light stroke-main" />
+      <!-- Swatch 6 -->
+      <rect x="360" y="613" width="50" height="26" rx="4" class="fill-medium stroke-main" />
+    </g>
+
+    <!-- Slider: Prioridade -->
+    <text x="60" y="660" class="text-label">Prioridade: 0</text>
+    <line x1="60" y1="675" x2="500" y2="675" class="stroke-main" stroke-width="2" />
+    <circle cx="70" cy="675" r="7" class="fill-primary stroke-main" />
+
+    <!-- Input + Botão Refresh (PID) -->
+    <text x="60" y="700" class="text-label">PID</text>
+    <rect x="60" y="708" width="380" height="30" rx="4" class="stroke-main bg-white" />
+    <text x="72" y="727" class="text-code">5184</text>
+    
+    <!-- Botão Refresh Icon -->
+    <rect x="450" y="708" width="50" height="30" rx="4" class="fill-light stroke-main" />
+    <path d="M 470,720 A 5,5 0 1,1 475,725" class="stroke-main" fill="none" />
+    <path d="M 475,721 L 475,725 L 471,725" class="stroke-main" />
+
+    <text x="60" y="750" class="text-guide">PID livre: não existe na lista</text>
+
+    <!-- Botões de Ação Rodapé -->
+    <rect x="60" y="760" width="90" height="30" rx="4" class="fill-light stroke-main" />
+    <text x="82" y="779" class="text-label">Cancelar</text>
+
+    <rect x="160" y="760" width="90" height="30" rx="4" class="fill-primary stroke-main" />
+    <text x="188" y="779" class="text-btn">Salvar</text>
+  </g>
+
+  <!-- ==================== LEGENDA E ANOTAÇÕES DE LINHAS GUIA ==================== -->
+  <g id="legenda" transform="translate(560, 660)">
+    <rect x="0" y="0" width="515" height="120" rx="6" class="fill-light stroke-thin" />
+    <text x="15" y="22" class="text-title">Guia do Wireframe (Componentes Mapeados):</text>
+    
+    <circle cx="20" cy="42" r="4" class="fill-primary" />
+    <text x="32" y="45" class="text-label">Inputs / Campos de Texto (PID, Estado, Nome, Cor)</text>
+    
+    <circle cx="20" cy="62" r="4" class="fill-primary" />
+    <text x="32" y="65" class="text-label">Shapes / Amostras de Cor Selecionáveis (Swatches e Preview)</text>
+    
+    <circle cx="20" cy="82" r="4" class="fill-primary" />
+    <text x="32" y="85" class="text-label">ListView com Destaque para Item Selecionado e Botões de Ação</text>
+    
+    <circle cx="20" cy="102" r="4" class="fill-primary" />
+    <text x="32" y="105" class="text-label">Progress Bar (Barra de Progresso) e Sliders com Linhas Guia (Dashed)</text>
+  </g>
+
+</svg>
