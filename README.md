@@ -1,6 +1,7 @@
 # SIGMAP
 
 **Sigma P** é um simulador de execução de processos de Sistemas Operacionais
+<img width="1358" height="767" alt="linux" src="https://github.com/user-attachments/assets/1065c1df-1c4a-41a3-be20-796a7037608c" />
 
 ## Licença 
 
