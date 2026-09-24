@@ -40,10 +40,18 @@ bin/
 ## Como citar 
 VITOR et al, Sigma P - Simulador de processos SO. Versão 0.1. UNIFAGOC, 2026.
 
+## Como sugerir uma alteração
+
+Abrir uma nova issue, fazer um fork. Caso tenha conhecimento da linguagem Rust, fazer um fork e PR justificando a implementação. 
+
+Obs: Sugestões são bem vindas, embora não seja uma garantia de que serão implementadas
+Porém pode ajudar as pessoas que tenham interesse em contribuir com o projeto
+
 ## Contribua com o projeto 
 
 Compile para novas arquiteturas e faça um PR disponibilizando o binário na pasta bin
 Ou faça um fork e customize de acordo com o seu objetivo
+Realize tests, reporte bugs ou sugira melhorias
 
 ## Construindo a partir do fonte
 Instale o Rust, clone e build
